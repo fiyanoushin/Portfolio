@@ -1,0 +1,277 @@
+html{
+    scroll-behavior: smooth;
+}
+
+
+body{
+    background-color:#000000;
+    font-family: 'Nunito', sans-serif;
+    box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+     overflow-x: hidden;
+}
+p{
+    color:  #999999;
+}
+.header{
+    position: fixed;
+    width: 100%;
+    height: 20px;
+    top: 0;
+    left: 0;
+    padding: 50px 50px;
+    backdrop-filter: blur;
+    background-color: #333;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 1000;
+
+
+    
+}
+.homee{
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: none;
+   
+}
+
+
+.navbar {
+    display: flex;
+    gap: 16px;
+    text-decoration: none;
+    position: relative;  
+    background: transparent;  
+    padding-right: 0;  
+    text-align: left; 
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+    border-bottom: 3px solid transparent;
+}
+
+.navbar a:hover {
+    color: beige;
+    border-bottom: 3px solid #dcb56f;
+}
+
+
+.intro-section {
+  display: flex;
+  align-items: center;     
+  justify-content: center; 
+  gap: 40px;              
+  padding: 70px;
+  flex-wrap: wrap;         
+  text-align: left;
+}
+
+.text-box {
+  max-width: 400px;
+  color: white;
+}
+
+.profile-img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit:cover;
+}
+
+.line {
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  border: none;
+  animation: slideLine 1s forwards;
+}
+
+
+@keyframes slideLine {
+  to {
+    width: 100%;
+ }
+}
+.mybtn{
+    font-size: 18px;
+    padding: 16px 32px;
+    border-radius: 40px;
+    cursor: pointer;
+    background: linear-gradient(270deg,#dcb56f 10%,#ca8154 100%);
+    border: none;
+    color: white;
+    transition: transform 0.3s ease; box-shadow: 0.2s ease;
+
+}
+.mybtn:hover{
+    color: #333;
+}
+.homie{
+   margin-top: 150px;
+   padding: 2rem;
+   color: white;
+   /* height: 738px; */
+}
+.section{
+    padding: 3rem;
+    padding-top: 200px;
+    color: white;
+    /* height:738px ; */
+}
+
+
+.myskills{
+  
+  
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* height: 300px; */
+  margin-top: 100px;
+}
+.circle{
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+#circ{
+    background: conic-gradient(#dcb56f  0% 60%, #ca8154 60% 100%);
+
+}
+#cir,#ci{
+    background:conic-gradient(#dcb56f  0% 90%, #ca8154 90% 10%);
+}
+.html{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 8px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: bold;
+    
+}
+.mypro{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 40px;
+    cursor: pointer;
+}
+.item{
+    position: relative;
+    width: 420px;
+    height:200px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+.item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+.item:hover img{
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+.caption {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  padding: 10px ;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+
+.item:hover .caption {
+  transform: translateY(0%);
+
+}
+#message{
+    resize: none;
+
+}
+.tell{
+    border-radius: 8px;
+}
+#email{
+    height: 50px;
+    width: 450px;
+}
+#name{
+     height: 50px;
+    width: 450px;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 760px) {
+    .header{
+        position: relative;
+    }
+.section{
+    padding: 40px 20px;
+}
+
+  .navbar {
+    flex-direction: column;
+    background: #333;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+.navbar a {
+  padding: 10px;
+}
+
+.navbar a:hover {
+  color:  #dcb56f;
+  border-bottom: 2px solid  #dcb56f;
+}
+
+.myskills{
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+ 
+  .container {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  #name, #email, #message {
+    width: 100%;
+    max-width: 100%;
+}
+#fya{
+    align-items: flex-start;
+}
+  }
