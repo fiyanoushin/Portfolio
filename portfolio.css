@@ -228,9 +228,6 @@ p{
 }
 
 @media (max-width: 760px) {
-    body{
-        overflow-x: hidden;
-    }
     .header{
         position: relative;
     }
